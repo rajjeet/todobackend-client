@@ -5,7 +5,8 @@
   "scripts": {
     "prepublish": "grunt",
     "build": "grunt",
-    "start": "open index.html || sensible-browser index.html || xdg-open index.html"
+    "start": "open index.html || sensible-browser index.html || xdg-open index.html",
+    "debug": "node --inspect-brk app.js"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,10 @@
   "homepage": "https://github.com/TodoBackend/todo-backend-client",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-bowercopy": "^1.2.0",
+    "grunt-bowercopy": "^1.2.4",
     "grunt-contrib-clean": "^0.6.0"
   },
   "dependencies": {
     "express": "^4.13.3"
   }
-
 }
